@@ -136,6 +136,23 @@ If that's right, the goal of fundamental physics shifts:
 
 - 📄 [`PAPER.md`](PAPER.md) — the long-form thought-experiment paper.
 - 🧪 [`SIMULATION.md`](SIMULATION.md) — a concrete minimal-simulation spec to test the idea.
+- 📚 [`RESEARCH.md`](RESEARCH.md) — how CART sits in the real literature (Smolin, Wolfram, Verlinde, "it from qubit", Schmidt–Lipson), what's actually distinctive, and the strongest objections.
+- 📣 [`SHARE.md`](SHARE.md) — ready-to-paste posts (Reddit / X) if you want to discuss it publicly.
+
+### How CART relates to existing physics (short version)
+
+CART's individual intuitions each have a serious research lineage — which is the point, not an embarrassment:
+
+| CART intuition | Closest established work |
+|---|---|
+| Laws *evolve*, aren't timeless | Lee Smolin — *Time Reborn*, cosmological natural selection |
+| Laws are emergent/statistical, not fundamental | Verlinde — entropic gravity |
+| Dimensions are emergent, can be fractional/variable | Wolfram Physics Project; holography / "it from qubit" |
+| Reality is relational; relations are primary | Rovelli — Relational Quantum Mechanics |
+| A law = the most compressed stable description | Minimum Description Length / Occam |
+| A system can infer its own invariants from data | Schmidt & Lipson (Eureqa); AI Feynman |
+
+What's (maybe) distinctive: putting **evolving laws** and **emergent dimension** under the *same* mechanism — correlation-stability — and treating **drift as a feature**, then making it a runnable toy. Full discussion and the honest objections are in [`RESEARCH.md`](RESEARCH.md).
 
 ## Status, license, and how to engage
 

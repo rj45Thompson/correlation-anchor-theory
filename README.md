@@ -68,6 +68,19 @@ Adding "another dimension" does not create a new *place*; it adds another indepe
 
 ---
 
+## A simpler way to picture it: laws as *objects* in a relational space
+
+Drop the word "law" and picture each one as an **object** sitting in some space. Four questions follow — and CART's claim is that the first, third, and fourth all collapse into *relationships*:
+
+- **Position — where is it?** Nowhere absolute. A law's position is *induced* by its relationships to the other laws — like a node in a graph embedding, which has no coordinates until you reconstruct them from its edges. Position is an output, not an input.
+- **Properties — what does it carry?** Its **stability** (anchor-strength — think of it as *mass*: heavier, older laws warp the space and become "constants"), its **domain** (which observables it touches), and its **weight** (how hard it constrains).
+- **Relationships — what is it connected to?** *(the big one)* Edges between laws: **derivation** (A implies B), **co-stability** (A and B stay stable together — a correlation *between* anchors, CART going recursive), **exclusion** (A and B can't both hold — so a phase transition is just swapping one exclusion-set for another), and **reduction** (A is a limit of B). **The relationship graph *is* the theory.**
+- **Distance — what does "far apart" mean?** Relational dissimilarity, and *not unique*: privilege derivation → distance = inference-steps; privilege co-stability → distance = `1 − correlation`; privilege domain → distance = non-overlap. Different privileged relations give **different-dimensional geometries over the same laws** — Dimensional Relativity, made concrete. Tight clusters = *regimes*; the gaps between them = *phase transitions*.
+
+**Then walk the maze backward.** Rather than grow laws from nothing and hope, *cheat*: take the laws we already have as known-good anchors and **invert** to find the rules that make the rules — the generator behind them. That backward pass is what hands us **better dimensional awareness** — the real degrees of freedom stop being assumed and start being *discovered*. Full treatment in [`PAPER.md`](PAPER.md) §4.
+
+---
+
 ## Standard view vs. CART
 
 | Standard view | CART view |

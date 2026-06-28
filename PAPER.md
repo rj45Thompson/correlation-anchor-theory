@@ -116,7 +116,75 @@ If correct:
 
 ---
 
-## 4. Unified Interpretation
+## 4. Laws as Objects in a Relational Space
+
+A more intuitive way to hold the entire theory: **stop thinking of a law as a rule, and start thinking of it as an object** — a point in some space — and then ask the only four questions such an object forces on you. *Where is it? What does it carry? What is it connected to? What does distance to another one mean?*
+
+The punchline of CART is that, for a law-object, **three of those four answers are not primitive — they are read off the fourth.** Relationships are primary; position, properties of place, and distance are all projections of the relationship structure.
+
+### 4.1 Position — where is a law-object?
+
+There is no background grid for it to sit on (that was §3). So a law has **no absolute position.** Its position is **induced entirely by its relationships** to the other law-objects — exactly the way a node in a graph embedding has no intrinsic coordinates; you *reconstruct* coordinates that best preserve who-connects-to-whom. Position is therefore a **derived, secondary quantity**: the *output* of embedding the relationship graph, never an input. If the relationships change, the positions move — even though "nothing went anywhere."
+
+### 4.2 Properties — what does a law-object carry?
+
+Each object carries the quantities CART already tracks:
+
+- **Stability `S`** — its anchor-strength (how persistent the underlying correlation is). Treat this as the object's **mass**: the heavier and older it is, the more it warps the coordinate system around it. A very old, very stable law is a "constant" — a *heavy* object, and other law-objects' positions are pulled toward it. (This is the same intuition that makes gravity look emergent in Verlinde's picture: the geometry bends toward the most stable structure.)
+- **Support / domain** — the set of observables it ranges over (its reach).
+- **Weight** — how strongly it constrains within that domain.
+- **Age / provenance** — how long it has been an anchor.
+
+### 4.3 Relationships — the big one
+
+This is the load-bearing question. **The relationships are primary; position, distance, and even the identity of a "law" are read off them.** Strip a law-object of its edges and almost nothing is left — just a label.
+
+The edges between law-objects come in a few kinds:
+
+- **Derivation / entailment** (directed): A implies B. (Energy conservation ↔ time-translation symmetry is the textbook case — Noether's theorem.)
+- **Co-stability** (the recursive heart of CART): A and B tend to be stable in the *same* regimes — their stability histories are correlated. This is a **correlation between anchors** — a *second-order* correlation. CART eats itself in the right way: laws are stable correlations, and the relationships *between* laws are the stable correlations between those correlations.
+- **Constraint / compatibility**: A and B must hold jointly; they co-limit each other.
+- **Exclusion** (regime-defining): A and B cannot both be anchors at once. A **phase transition is just the swap of one mutually-exclusive set of anchors for another.**
+- **Reduction / limit**: A is a limiting case of B (Newtonian gravity is the low-energy limit of general relativity) — a directed "is-a-limit-of" edge.
+
+The **relationship graph *is* the theory.** Everything else in this section is a projection of it.
+
+### 4.4 Distance — what does "far apart" mean, relationally?
+
+Distance here is **not spatial — it is relational dissimilarity** — and, crucially, **it is not unique.** You get a *different* distance, and therefore a *different geometry*, depending on which relationship you let define it:
+
+- privilege **derivation** → distance = how many inference steps from A to B (a graph geodesic). Close = one quickly implies the other; far = independent or many steps apart.
+- privilege **co-stability** → distance = `1 − correlation` of their stability over time. Close = they rise and fall together.
+- privilege **domain** → distance = how little their observable-supports overlap. Close = they are "about" the same things.
+
+This is **Dimensional Relativity (§3) made concrete.** There is no single "distance between two laws." Two observers who privilege different relations build **different-dimensional geometries over the very same set of laws** — and both are valid compressions of the same underlying relational structure. That is exactly the 2D/3D "overlap" intuition, now expressed for laws instead of for points in space.
+
+And the picture pays off:
+
+- **Tight clusters** in this space = **regimes / effective theories** — a knot of mutually-deriving, co-stable, compatible laws that hang together as one self-consistent "physics."
+- **Gaps between clusters** = the **phase transitions** where the anchor set reorganizes.
+- **Drift of the whole configuration over time** = Smolin's evolving laws — now literally visible as objects sliding, merging, and splitting in a relational space.
+
+### 4.5 Why this sharpens the test
+
+The toy in §6 / [`SIMULATION.md`](SIMULATION.md) produces **anchors** (the laws). This reframing adds a second layer with a clean, buildable recipe: take those anchors as *nodes*, draw the edges of §4.3 between them (derivation, co-stability, exclusion, …), and **embed that anchor-relationship graph.** Then watch for exactly three things — emergent **clusters** (regimes), **cluster swaps** over time (phase transitions / evolving laws), and **non-unique distance** under different privileged relations (Dimensional Relativity). All three are standard knowledge-graph-embedding measurements, which means the most speculative part of CART reduces to a procedure that can actually be run.
+
+### 4.6 Walking the maze backward — using known laws to find the rules that make the rules
+
+The honest weakness of the bottom-up program (the forward simulation, §6): evolving a lawless substrate and *hoping* recognizable physics falls out is brittle — it may never converge, and "we imposed nothing" is notoriously hard to honor (see [`RESEARCH.md`](RESEARCH.md) §2.6, on how even careful law-discovery quietly smuggled the dynamics back in). So run the maze **backward.**
+
+Instead of growing laws from nothing, **start from the laws we already have** and treat them as *labeled anchors* — known-good points already sitting in the §4 relational space. Then invert: solve for the relationship structure and the generator that would produce *exactly these anchors, in these positions, with these co-stabilities and exclusions.* We are deliberately **"cheating"** — using current physics as an answer key — to recover the **rules that make the rules:** the meta-structure of the law-graph, the generator the forward simulation was supposed to find the slow way.
+
+This is a standard inverse / amortized-inference move, and it buys two things:
+
+1. **Tractability and a real success signal.** You are fitting a generator to known targets, not praying over a random walk. It either reproduces known laws *and their known relationships* (energy ↔ time-translation symmetry; Newtonian gravity as a limit of GR) or it visibly fails — the clean pass/fail the forward toy lacks.
+2. **Better dimensional awareness.** Once you hold the generator that lays out the known laws, **the emergent coordinate system falls out of it** — you learn which projections are genuine degrees of freedom and which are artifacts. The number and identity of the relational dimensions stop being *assumed* and become *discovered.* You only see the maze's true dimensionality after you have walked it backward from the exit.
+
+Forward and backward are complementary: forward emergence (§6) tests whether law-like structure *can* self-organize at all; backward inversion uses known physics as a warm start to recover the meta-rules — and, with them, the real dimensions. **The backward pass is how CART becomes something you can map rather than merely assert.**
+
+---
+
+## 5. Unified Interpretation
 
 | Standard view | CART view |
 |---|---|
@@ -128,7 +196,7 @@ If correct:
 
 ---
 
-## 5. Simulation Principle
+## 6. Simulation Principle
 
 A candidate implementation:
 
@@ -149,7 +217,7 @@ A concrete operationalization: define **anchors = the top-k most persistent mutu
 
 ---
 
-## 6. Testability (in principle)
+## 7. Testability (in principle)
 
 The theory becomes scientific to the extent that it predicts:
 
@@ -160,7 +228,7 @@ The theory becomes scientific to the extent that it predicts:
 
 ---
 
-## 7. Interpretation
+## 8. Interpretation
 
 This framework suggests:
 
@@ -173,7 +241,7 @@ Physics is therefore:
 
 ---
 
-## 8. Closing Statement
+## 9. Closing Statement
 
 If correct, this reframes the goal of fundamental physics:
 

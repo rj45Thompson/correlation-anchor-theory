@@ -51,6 +51,23 @@ for each timestep t:
 
 A negative result is genuinely interesting here — it would say that lawful structure does *not* come for free from correlation-stability alone, and that something more is required.
 
+## Layer 2 — the space of laws (and walking it backward)
+
+Layer 1 (above) produces **anchors** — candidate laws. The richer test treats those anchors as *objects in their own relational space* (see [`PAPER.md`](PAPER.md) §4).
+
+**Forward (bottom-up):**
+1. Take the anchors as **nodes**.
+2. Draw edges between them: **derivation** (does fixing A let you predict B?), **co-stability** (correlate the anchors' stability time-series), **exclusion** (do A and B never co-occur as anchors?).
+3. **Embed** that anchor-relationship graph (MDS / spectral / any knowledge-graph embedding).
+4. Measure: emergent **clusters** (= regimes / effective theories), **cluster swaps** over time (= phase transitions / evolving laws), and whether **distance is non-unique** under different privileged relations (= Dimensional Relativity).
+
+**Backward — the "cheat", and the more tractable test:**
+Instead of hoping physics emerges from noise, **seed the space with known laws** as labeled anchors and *invert*: fit the generator (the "rules that make the rules") that reproduces their known relationships — e.g. *energy ↔ time-translation symmetry*, *Newtonian gravity as a limit of GR*.
+- **Success criterion:** the recovered generator correctly predicts a **held-out** law's position and relationships (train/test split over known physics — and watch for leakage, the classic trap).
+- **Payoff:** the emergent coordinate system — hence the effective **dimensionality** — is *read off the fitted generator* rather than assumed. That is the concrete meaning of "better dimensional awareness": the real degrees of freedom are discovered, not posited.
+
+This backward pass is the cleaner experiment of the two — unlike the forward toy, it has a labeled answer key.
+
 ## Honest caveats
 
 - "Mutual-information edges in a graph" is one operationalization of *anchor*; it may not be the right one. Part of the experiment is finding a stability functional that produces non-trivial anchors.

@@ -149,6 +149,7 @@ If that's right, the goal of fundamental physics shifts:
 
 - 📄 [`PAPER.md`](PAPER.md) — the long-form thought-experiment paper.
 - 🧪 [`SIMULATION.md`](SIMULATION.md) — a concrete minimal-simulation spec to test the idea.
+- 🎮 [`QUANTUM_FOR_GAME_DEVELOPERS.md`](QUANTUM_FOR_GAME_DEVELOPERS.md) — boxing is observation, frames are measurement, and why the anchors may be in a projection we do not index. Includes the cavity thought experiment.
 - 📚 [`RESEARCH.md`](RESEARCH.md) — how CART sits in the real literature (Smolin, Wolfram, Verlinde, "it from qubit", Schmidt–Lipson), what's actually distinctive, and the strongest objections.
 - 📣 [`SHARE.md`](SHARE.md) — ready-to-paste posts (Reddit / X) if you want to discuss it publicly.
 
